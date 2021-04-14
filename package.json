@@ -1,0 +1,37 @@
+{
+  "name": "rabbitmq-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "consumer": "nodemon consumer",
+    "producer": "nodemon producer",
+    "dev": "nodemon producer & nodemon consumer",
+    "test": "mocha --require ts-node/register lambdas/**/*.spec.ts --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Funay1/rabbitMQ-NODEJS.git"
+  },
+  "keywords": [
+    "rabbitMq"
+  ],
+  "author": "Douglas Funayama",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Funay1/rabbitMQ-NODEJS/issues"
+  },
+  "homepage": "https://github.com/Funay1/rabbitMQ-NODEJS#readme",
+  "dependencies": {
+    "@types/amqplib": "^0.5.17",
+    "amqplib": "^0.7.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "serverless-offline": "^6.9.0",
+    "serverless-plugin-typescript": "^1.1.9",
+    "ts-node": "^9.1.1",
+    "tsc": "^1.20150623.0",
+    "typescript": "^4.2.4"
+  }
+}
